@@ -2,11 +2,30 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-<style>
-      body{text-align:center;} 
-      .xian{
-        border:1px solid #151515;
-      }
+<style type="text/css">
+  table{
+    border-collapse: separate;
+    border-color: rgb(197,197,197);
+  }
+ .xian{
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .top{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .bottom{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  table{
+    max-width:80px;
+  }
+     
 </style>
 <title>太阳系表格</title>
 </head>
@@ -18,7 +37,7 @@
        
         <tr style="background-color: rgb(235,235,235);">
             <th colspan="2" style="background-color: rgb(245,245,245);">      </th>
-            <th class="xian">名字</th>
+            <th class="top">名字</th>
             <th>图片</th>
             <th>质量（10<sup>23</sup>）</th>
             <th>直径（Km） </th>
@@ -41,7 +60,7 @@
             <td>3.7</td>
             <td>4222.6</td>
             <td>57.9</td>
-            <td>167</td>
+            <td>167</td> 
             <td>0</td>
             <td>离太阳最近</td>
         </tr>
@@ -157,7 +176,7 @@
           <!--冥王星-->
           <tr style="background-color:rgb(245,245,245)">
             <th colspan="2" style="background-color: rgb(235,235,235);">矮行星</th>
-            <th class="xian" style="background-color: rgb(235,235,235);">冥王星</th>
+            <th class="bottom" style="background-color: rgb(235,235,235);">冥王星</th>
             <td><img src="Pluto.jpeg" alt="冥王星" ></td>
             <td>0.0146</td>
             <td>2,370</td>
