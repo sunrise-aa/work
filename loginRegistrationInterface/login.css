@@ -1,0 +1,174 @@
+/* 初代 */
+/* body{
+   
+    
+    font-family: "montserrat";
+    background-image: linear-gradient(45deg,#E4FFCD,rgb( 156,220,254),#2980B9,#E4FFCD);
+    background-size: 500%;
+    animation: bganimation 16s infinite;
+    
+
+  } */
+
+/* 第二代 */
+  body{
+    background-image: linear-gradient(45deg,#E4FFCD,rgb( 156,220,254),#2980B9,#E4FFCD);
+    background-size: 1000%;
+    animation: bganimation 16s infinite;
+   
+      
+        line-height: 1.5em;
+       font-family: "Times New Roman", Times, serif;
+        font-size: 14px;
+       text-align: center;         
+  }
+  @keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+
+#Login{
+    text-align: right;
+    
+}
+#div1{
+   margin-left: 50%;
+
+}
+
+#alldiv{
+  
+    position:absolute;
+    width: 40%;
+    height: 40%;
+   top: 50%;
+   left: 50%;
+ 
+  
+    transform: translate(-50%,-50%);
+}
+
+
+
+#tiaokuan {
+    font-size: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#title{
+    text-align: center;
+}
+
+.clear {
+    padding-left: 200px;
+}
+
+.shuru input[type='text']{
+    
+    outline-style: none;
+    border: 1px solid #c0c4cc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+}
+.shuru input[type='password']{
+    outline-style: none;
+    border: 1px solid #c0c4cc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+}
+.shuruhaserror{
+    color: red;
+}
+.shuruhaserror input[type='text']{
+    outline-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+    color: red;
+}
+.login{
+    width: 100px;
+}
+.shuruhaserror input[type='text']{
+    outline-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 50%;
+
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+    color: red;
+    /* position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 1; */
+}
+.labels{
+    font-family: fantasy;
+    font-size: small;
+    display: none;
+}
+.labelshow{
+    font-family: fantasy;
+    font-size: small;
+    position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 1;
+}
+@keyframes zy{
+ 
+	0%   { left:0px; top:0px;}
+	25%  { left:20px; top:0px;}
+	50%  { left:-20px; top:0px;}
+	75%  { left:0px; top:0px;}
+	100% { left:0px; top:0px;}
+}
+.move{
+   
+    position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 2;
+}
+.shuruhaserror input[type='password']{
+    outline-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+    color: red;
+    /* position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 1; */
+}
+table{
+    position: absolute;
+    text-align: center;
+    
+}

@@ -1,0 +1,64 @@
+.xian {
+
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .top {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .bottom {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  td{
+    border: 1px solid rgb(228,228,228);
+   
+  }
+  th{
+    border: 1px solid rgb(228,228,228);
+    background-color: rgb(235,235,235);
+  }
+  .deepcolor{
+    background-color: rgb(245,245,245);
+  }
+.shallowcolor{
+  background-color: rgb(250,250,250);
+}
+#nullcontent{
+  background-color: rgb(250,250,250);
+
+}
+.all{
+ background-color: black;
+  position:absolute;
+  width: 80%;
+  height: 50%;
+ top: 40%;
+ left: 50%;
+
+ 
+  /* transform: translate(0%,-50%); */
+}
+table{
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 35%;
+}
+p{
+text-align: center;
+}
+#buttonbox{
+   background-color:rgb(228,228,228) ;
+   text-align: center;
+}
+#exit{   
+    color:blue;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Login</title>
+    <style type="text/css">
+        @import url(login.css);
+    </style>
+</head>
+
+<body>
+    <h1>欢迎登陆</h1>
+    <div id="alldiv">
+        <table>
+            <!-- 第一行 -->
+            <tr class="shuru" id="usernametr" onmouseout="rechange(this)">
+                <td><label for="username">用户名:</label></td>
+                <td> <input type="text" id="username" placeholder="请输入用户名" autocomplete="off"></td>
+                <td><label id="usernametip" class="labels">! 3-15位数字/字母</label></td>
+
+
+
+                <!-- 第二行 -->
+            <tr class="shuru" id="passwordtr" onmouseout="rechange(this)">
+                <td><label for="password">密码:</label></td>
+                <td> <input type="password" id="password" placeholder="请输入密码" autocomplete="off"></td>
+                <td><label id="passwordtip" class="labels">! 6-20位数字/字母</label></td>
+            </tr>
+
+
+
+            <!-- 第三行 -->
+            <tr class="unchecked" id="checkbox">
+                <td></td>
+                <td> <input type="checkbox" id="xieyi" onclick="clickcount()"> <label id="tiaokuan"
+                        for="xieyi">我已阅读并同意相关服务条款和隐私政策</label>
+                </td>
+            </tr>
+            <!-- 第八行 -->
+            <tr>
+                <td><button id="register">注册</button></td>
+
+                <td id="Login"><button id="login" onmouseout="checkagain()">登录</id=button>
+                </td>
+                <td></td>
+
+
+            </tr>
+
+
+        </table>
+    </div>
+
+
+
+
+    <script src="login.js">
+
+    </script>
