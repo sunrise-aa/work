@@ -1,0 +1,169 @@
+body {
+    font-size: 21px;
+   height: 100%;
+   
+}
+html{
+    height: 100%;
+}
+table {
+
+    margin: 0 auto;
+    
+    /* line-height: 2;
+    text-align: bottom; */
+
+
+}
+td{
+    max-width: 200px;
+}
+
+h1 {
+  margin-left: 120px;
+   
+}
+
+#tiaokuan {
+    font-size: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clear {
+    padding-left: 200px;
+}
+#all{
+    background-image: linear-gradient(45deg,#E4FFCD,rgb( 156,220,254),#2980B9,#E4FFCD);
+  background-size: 1000%;
+  animation: bganimation 16s infinite;
+  line-height: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+}
+@keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  
+#alltable{
+  
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ 
+   background-color: white;
+   
+  overflow: hidden;
+   
+    transform: translate(-50%,-50%);
+}
+#titile{
+    margin: 0 auto;
+}
+.shuru input[type='text']{
+   
+    outline-style: none;
+    border: 1px solid #c0c4cc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+}
+.shuru input[type='password']{
+    outline-style: none;
+    border: 1px solid #c0c4cc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+}
+.shuruhaserror{
+    color: red;
+
+   
+}
+.shuruhaserror input[type='text']{
+    outline-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+    color: red;
+}
+
+@keyframes zy{
+ 
+	0%   { left:0px; top:0px;}
+	25%  { left:20px; top:0px;}
+	50%  { left:-20px; top:0px;}
+	75%  { left:0px; top:0px;}
+	100% { left:0px; top:0px;}
+}
+.move{
+   
+    position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 1;
+}
+.shuruhaserror input[type='password']{
+    outline-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-family: "Microsoft soft";
+    color: red;
+
+   
+}
+.labels{
+    font-family: fantasy;
+    font-size: small;
+    visibility: hidden;
+}
+.labelshow{
+    font-family: fantasy;
+    font-size: small;
+    position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 1;
+}
+.unchecked{
+    position:relative;
+    animation:zy 0.5s infinite;
+    animation-iteration-count: 1;
+}
+.lefttip{
+    text-align: right;
+}
+input[type=button] {
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 30%;
+   
+  }
+  input[type=text]{
+    height: 40px;
+  }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理系统</title>
+    <style>
+        @import url(../css/index.css);
+    </style>
+</head>
+
+<body>
+  
+    <div id="all">  
+        <div id="main">
+
+            <!--  头部  -->
+            <div class="header">
+<div id="titleDiv" >
+                <h2 class="header-title">学生信息管理系统<button id="exit">退出系统</button></h2>
+</div>
+
+                <div class="header-buttons">
+                    <input type="button" value="新增" id="add">
+                    <input type="button" value="批量删除" id="delete">
+                    <input type="button" id="changepassword" value="修改密码">
+                    <input type="text" placeholder="搜索" id="search">
+
+                </div>
+            </div>
+            <div class="content">
+
+                <table class="student-table" id="student-table" cellspacing="0">
+                   <thead>
+                    <tr id="table-head">
+                        <th><input type="checkbox" id="choose-all"></th>
+                        <th>序号</th>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>学院</th>
+                        <th>专业</th>
+                        <th>年级</th>
+                        <th>班级</th>
+                        <th>年龄</th>
+                        <th>操作</th>
+                    </tr>
+                   
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                  
+             
+                </table>
+            </div>
+
+            <div class="footer">
+
+                <div class="footer-message" id="message">
+                    <p id="massage">第1页，共27条（每页显示10条）</p>
+    
+                </div>
+    
+                <div class="footer-buttons" id="foot-buttons">
+                    <input type="button" class="green-button footer-button" value="下一页" id="next">
+                    <input type="button" class="red-button footer-button" value="上一页" id="previous">
+                </div>
+            </div>
+
+            <div id="deal-information">
+
+                <div class="deal-information-head">
+                    <h4 id="deal-information-title">新增学生信息</h4>
+                </div>
+        
+                <div class="deal-information-body">
+                    <ul class="deal-information-body-content">
+                        <li>
+                            学号 <input type="text" id="number" class="deal-input" placeholder="学号" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                        </li>
+                        <p id="tipNumber">！！！学号为11位数字</p>
+                        <li>
+                            姓名 <input type="text" id="name" class="deal-input" placeholder="姓名">
+                        </li>
+                        <li>
+                            学院 <input type="text" id="college" class="deal-input" placeholder="学院" name="xue-yuan"
+                                      list="xue-yuan" onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))">
+                                    
+                            <datalist id="xue-yuan">
+                                <option value="计算机科学与工程学院">计算机科学与工程学院</option>
+                                <option value="会计学院">会计学院</option>
+                                <option value="理学院">理学院</option>
+                                <option value="人工智能学院">人工智能学院</option>
+                            </datalist>
+                        </li>
+                        <li>
+                            专业 <label for="major"></label><input type="text" id="major" class="deal-input" placeholder="专业" name="zhuan-ye"
+                                    
+                            list="zhuan-ye" onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))">
+                                <datalist id="zhuan-ye"><option value="软件工程">软件工程</option>
+                                <option value="会计学">会计学</option>
+                                <option value="数学">数学</option>
+                                <option value="大数据">大数据</option>
+                            </datalist>
+                        </li>
+                        <li>
+                            年级 <input type="text" id="grade" class="deal-input" placeholder="年级">
+                        </li>
+                        <li>
+                            班级 <input type="text" id="class1" class="deal-input" placeholder="班级">
+                        </li>
+                        <li>
+                            年龄 <input type="number" id="age" class="deal-input" placeholder="年龄">
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="deal-information-foot">
+                    <input type="button" class="white-button footer-button" value="取消" id="cancel">
+                    <input type="button" class="green-button footer-button" value="提交" id="save">
+                </div>
+            </div>
+
+           
+    
+
+        </div>
+        <div>
+          <div class="mask"></div>
+        </div>
+    <!-- -->
+      <!-- <embed src="../music/好听的音乐.mp3" type="audio/mp3" style="visibility: hidden;" > -->
+         <embed src="../music/CMJ - 告白之夜（纯音乐）.mp3" type="audio/mp3" style="visibility: hidden;" >
+       <div id="change">
+        <ul>
+            <li>账号<input type="text" placeholder="请输入账号" id="UID" readonly="true"></li>
+            <li>密码<input type="password"placeholder="请输入原密码" id="password1"></li>
+            <li>密码<input type="password" placeholder="输入密码6~18位数字/字母" id="password2"  onKeyUp="value=value.replace(/[\W]/g,'')"></li>
+
+        <li><button id="sure">保存</button> <button id="no">取消</button></li>
+        </ul>
+       </div>
+
+</body>
+<script src="../js/index.js">
+
+</script>
+
+</html>
