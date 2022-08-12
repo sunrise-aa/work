@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+   list-style: none;
+}
+body {
+margin: 0 auto;
+  position: relative;
+    font: 1em 微软雅黑;
+    background-color: rgb(240,236,233);
+    overflow: hidden;
+}
+#all{
+    width: 100%;
+}
+.header {
+    height: 12%;
+   padding-top:5px;
+}
+.header-title{
+
+   text-align: center; 
+   margin: 10px;
+}.header-buttons {
+    padding: 0 0 0 20px;
+}
+#add,#delete,#changepassword {
+    border: none;
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+     box-shadow: 0 2px 2px rgb(43, 43, 45);
+}
+#changepassword,#search{
+    float :right;
+}#main {
+    width: 1246px;
+    height: 700px;
+    margin: 0 auto;
+}#add{
+  background-color: chartreuse;
+   
+}#delete{
+   background-color: #ff4e41;
+   width: 70px;
+   margin: 0 5px;
+}#search{
+    border-radius: 5px;
+   height:30px;
+   width: 200px;
+   margin-right: 10px;
+}#changepassword{
+  background-color: rgb(55,230,203);
+   margin-right: 20px;
+   
+}#changepassword:hover{
+    color: #fff;
+background-color: red;
+transition: 1s;
+}
+#add:hover,#delete:hover{
+    background-color: #0be7ff;
+    transition: 1s;
+}
+.content {
+   
+   background-color: rgb(238,241,248);
+}
+.student-table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid ;
+    table-layout: fixed;
+    font-size: 10px;
+   
+    
+    
+}
+
+
+
+.student-table tr{
+    height: 42px;
+}
+.student-table tbody tr:nth-child(odd){
+    background-color: rgb(238,241,248);
+    
+}
+.student-table tbody tr:nth-child(even){
+    background-color: rgb(255,255,255);
+}
+#table-head{
+    background-color: rgb(218,222,225);
+  
+   
+}.footer {
+    height: 11%;
+    display: flex;
+}
+
+.footer-message {
+    width: 38%;
+    height: 30px;
+    display: block;
+    font-size: 10px;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+   
+   padding-bottom: 0;
+  
+}
+
+.footer-buttons {
+  
+    width: 60%;
+}
+
+.footer-buttons input[type="button"] {
+    margin: 20px 20px 0 0;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    border:1px solid gray;
+    float:right;
+}
+#massage{
+  float: left ;
+ line-height: 35px;
+}
+tbody button{
+    border-radius: 5px;
+    caret-color: transparent;
+    cursor: pointer;
+    padding: 0 5px;
+    border: none;
+    height: 30px;
+   background-color: rgb(240,236,233);
+   box-shadow: 0 2px gray;
+}tbody button:nth-child(even):hover{
+background-color: rgb(55,230,203);
+}
+tbody button:nth-child(odd):hover{
+background-color: rgb(215,0,64);
+}
+
+input[type="button"]{
+    cursor: pointer;
+}
+#deal-information {
+ display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -180px;
+    width: 400px;
+    height: 370px;
+    z-index: 101;
+    text-align: center;
+    background-color: wheat;
+    
+   
+}
+
+.deal-information-head, .deal-information-foot {
+    height: 15%;
+}
+
+.deal-information-head {
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.deal-information-body {
+    height: 70%;
+}
+
+.deal-information-body-content > li {
+    height: 40px;
+    list-style: none;
+}
+
+.deal-input {
+    width: 200px;
+    height: 20px;
+}
+.green-button, .white-button {
+    border: none;
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+  
+}
+
+.green-button {
+    background-color: #fff;
+}
+
+.green-button:hover {
+    background-color: #37e6cb;
+    transition: 1s;
+}
+
+.red-button {
+    background-color: #fff;
+}
+
+.red-button:hover {
+    background-color: #ff4e41;
+    transition: 1s;
+}
+
+.white-button {
+    background-color: #fff;
+}
+
+.white-button:hover {
+    background-color: #0be7ff;
+    transition: 1s;
+}
+.deal-information-foot{
+    
+    padding: 20px;
+    
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+  display: none;
+    width: 100%;
+    height: 700px;
+    opacity: 0.5;
+    background-color: #fff;
+z-index: 100;  
+}
+#tipNumber{
+    display: none;
+    color: red;
+   position: absolute;
+
+    margin: 0 auto;
+    top: 80px;
+    left:120px;
+   font-size: 2px;
+}#star{
+    width: 500px;
+    height: 20px;
+    background-color: #37e6cb;
+}
+#exit{
+   height: 30px;
+   width: 80px;
+   color: red;
+   
+ border-radius: 20px;
+ 
+ float:right;
+ cursor: pointer;
+
+}#exit:hover{
+    background-color: #ff4e41;
+    color: white;
+    transition: 1s;
+}
+#titleDiv{
+    
+   position: relative;
+    width: 1235px;
+   
+}
+#change{
+   display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -180px;
+    width: 400px;
+    height: 370px;
+    z-index: 101;
+    text-align: center;
+   background-color: gray;
+    box-sizing: border-box;
+    padding: 20px 0;
+
+}
+#change li{
+    padding: 20px 0;
+    height:  30px;
+}
+#change li input{
+    height: 25px;
+    border-radius: 5px;
+}
+#sure,#no{
+  height: 30px;
+
+    background-color: #0be7ff;
+    cursor: pointer;
+    padding: 0 30px;
+    border-radius: 5px;
+}
